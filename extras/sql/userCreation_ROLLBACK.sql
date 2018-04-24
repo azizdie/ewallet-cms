@@ -1,0 +1,1 @@
+DELETE FROM `user` WHERE `user`.`Host` = '%' AND `user`.`User` = 'cmsUser';

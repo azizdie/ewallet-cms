@@ -1,4 +1,4 @@
-package com.ewallet.cms.service;
+package com.ewallet.cms.appli.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.ewallet.cms.beans.Profils;
-import com.ewallet.cms.repository.ProfilsRepository;
+import com.ewallet.cms.appli.bean.Profils;
+import com.ewallet.cms.appli.repository.ProfilsRepository;
 
 /**
  * class pour la gestion des services des Profils

@@ -1,4 +1,4 @@
-package com.ewallet.cms.controller;
+package com.ewallet.cms.appli.controller;
 
 import java.util.List;
 
@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ewallet.cms.beans.Administrateurs;
-import com.ewallet.cms.beans.Profils;
-import com.ewallet.cms.service.ProfilsService;
+import com.ewallet.cms.appli.bean.Administrateurs;
+import com.ewallet.cms.appli.bean.Profils;
+import com.ewallet.cms.appli.service.ProfilsService;
 
 /**
  * Class controller pour la gestion du profil.

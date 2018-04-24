@@ -1,4 +1,4 @@
-package com.ewallet.cms.beans;
+package com.ewallet.cms.appli.bean;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

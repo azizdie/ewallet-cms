@@ -1,4 +1,4 @@
-package com.ewallet.cms.service;
+package com.ewallet.cms.appli.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.ewallet.cms.beans.Clients;
-import com.ewallet.cms.repository.ClientsRepository;
+import com.ewallet.cms.appli.bean.Clients;
+import com.ewallet.cms.appli.repository.ClientsRepository;
 
 /**
  * class pour la gestion des services des Clients
@@ -26,7 +26,7 @@ public class ClientsService {
 	 * 
 	 * @return List<Clients> liste des Clients.
 	 */
-	public List<Clients> getAllClients(String id){
+	public List<Clients> getAllClients(){
 				
 		List<Clients>  clientsList = new ArrayList<>();
 		clientsRepository.findAll().forEach(clientsList::add);

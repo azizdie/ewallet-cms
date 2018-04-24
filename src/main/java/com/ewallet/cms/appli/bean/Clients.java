@@ -1,17 +1,16 @@
-package com.ewallet.cms.beans;
+package com.ewallet.cms.appli.bean;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
 /**
- * Class pour former le bean des administrateurs.
+ * Class pour former le bean des clients.
  * 
  * @author Diedhiou
  *
  */
 @Entity
-public class Administrateurs {
-	
+public class Clients {
 	@Id
 	private String id;
 	private String prenom;
@@ -22,19 +21,19 @@ public class Administrateurs {
 	/**
 	 * Contructeur de class sans parametre.
 	 */
-	public Administrateurs() {
+	public Clients() {
 		super();
 	}
 	
 	/**
 	 * Contructeur de classe avec parametres.
 	 * 
-	 * @param id de l'administrateur.
-	 * @param prenom de l'administrateur.
-	  * @param nom de l'administrateur.
-	 * @param description de l'administrateur.
+	 * @param id du client.
+	 * @param prenom du client.
+	 * @param nom du client.
+	 * @param description du client.
 	 */
-	public Administrateurs(String id, String prenom, String nom, String description) {
+	public Clients(String id, String prenom, String nom, String description) {
 		super();
 		this.id = id;
 		this.prenom = prenom;
@@ -44,7 +43,7 @@ public class Administrateurs {
 	/**
 	 * getter standard.
 	 * 
-	 * @return String id de l'administrateur.
+	 * @return String id du client.
 	 */
 	public String getId() {
 		return id;
@@ -53,7 +52,7 @@ public class Administrateurs {
 	/**
 	 * getter standard.
 	 * 
-	 * @return String prenom de l'administrateur.
+	 * @return String prenom du client.
 	 */
 	public String getPrenom(){
 		return prenom;
@@ -61,7 +60,7 @@ public class Administrateurs {
 	/**
 	 * getter standard.
 	 * 
-	 * @return String nom de l'administrateur
+	 * @return String nom du client
 	 */
 	public String getNom() {
 		return nom;
@@ -70,7 +69,7 @@ public class Administrateurs {
 	/**
 	 * getter standard.
 	 * 
-	 * @return String description de l'administrateur
+	 * @return String description du client
 	 */
 	public String getDescription() {
 		return description;
@@ -79,7 +78,7 @@ public class Administrateurs {
 	/**
 	 * Setter standard.
 	 * 
-	 * @param id de l'administrateur
+	 * @param id du client
 	 */
 	public void setId(String id) {
 		this.id = id;
@@ -88,7 +87,7 @@ public class Administrateurs {
 	/**
 	 * Setter standard.
 	 * 
-	 * @param prenom de l'administrateur
+	 * @param prenom du client.
 	 */
 	public void setPrenom(String prenom) {
 		this.prenom = prenom;
@@ -96,7 +95,7 @@ public class Administrateurs {
 	/**
 	 * Setter standard.
 	 * 
-	 * @param nom de l'administrateur
+	 * @param nom du client.
 	 */
 	public void setNom(String nom) {
 		this.nom = nom;
@@ -105,7 +104,7 @@ public class Administrateurs {
 	/**
 	 * Setter standard.
 	 * 
-	 * @param description de l'administrateur
+	 * @param description du client.
 	 */
 	public void setDescription(String description) {
 		this.description = description;
